@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Codinglands is an independent software company based in Iași, Romania. We build iOS apps and custom software, including Drimi for family baby care.">
+  <meta name="theme-color" content="#142342">
+  <title>Codinglands — Independent software development</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #142342; background: #fff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; text-underline-offset: .22em; }
+    a:hover { color: #244de0; }
+    a:focus-visible { outline: 3px solid #244de0; outline-offset: 5px; border-radius: 2px; }
+    .wrap { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 32px; border-bottom: 1px solid #dce1eb; }
+    .wordmark { font-size: 1.35rem; font-weight: 750; letter-spacing: -.045em; text-decoration: none; }
+    .wordmark span { color: #244de0; }
+    header a:last-child { font-size: .95rem; font-weight: 600; }
+    .intro { padding-block: 100px 92px; max-width: 860px; }
+    .eyebrow { font-size: .875rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 650; color: #52617a; margin: 0 0 24px; }
+    h1 { margin: 0; font-size: clamp(2.7rem, 7vw, 5.3rem); line-height: 1.06; letter-spacing: -.055em; font-weight: 720; text-wrap: balance; }
+    h1 span { color: #244de0; }
+    .lede { margin: 28px 0 0; max-width: 620px; font-size: 1.2rem; line-height: 1.65; color: #52617a; }
+    .work { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #dce1eb; border-bottom: 1px solid #dce1eb; }
+    .work article { padding: 42px 44px 44px 0; }
+    .work article + article { padding-left: 44px; padding-right: 0; border-left: 1px solid #dce1eb; }
+    .number { color: #244de0; font-family: ui-monospace, monospace; font-size: .875rem; }
+    h2 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -.035em; margin: 22px 0 16px; }
+    p { line-height: 1.7; }
+    .work p { margin: 0; color: #52617a; max-width: 420px; }
+    .work .status { display: inline-block; margin-top: 24px; padding: 6px 12px; font-size: .8125rem; font-weight: 600; color: #244de0; background: #edf1ff; border-radius: 4px; }
+    .contact { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding-block: 56px; }
+    .contact h2 { margin: 0; }
+    .contact a { font-size: clamp(1.1rem, 3vw, 1.6rem); font-weight: 550; overflow-wrap: anywhere; }
+    footer { color: #d2dbeb; background: #142342; padding-block: 38px; }
+    .legal { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 48px; font-size: .875rem; line-height: 1.65; }
+    .legal strong { display: block; color: #fff; font-size: 1rem; margin-bottom: 8px; }
+    .legal p { margin: 0; }
+    address { font-style: normal; }
+    @media (max-width: 640px) {
+      .wrap { width: calc(100% - 40px); }
+      header { padding-block: 24px; }
+      .intro { padding-block: 64px 56px; }
+      .lede { font-size: 1.0625rem; }
+      .work, .legal { grid-template-columns: 1fr; }
+      .work article, .work article + article { padding: 30px 0; border-left: 0; }
+      .work article + article { border-top: 1px solid #dce1eb; }
+      .contact { flex-direction: column; gap: 18px; padding-block: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="wordmark" href="#">codinglands<span>.</span></a>
+      <a href="#contact">Get in touch</a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Independent software company · Iași, Romania</p>
+        <h1 id="intro-title">Software for<br><span>everyday life.</span></h1>
+        <p class="lede">We build iOS apps and custom software. Codinglands is a Romanian company founded by Stefan-Cosmin Romanescu, focused on practical products and carefully built experiences.</p>
+      </section>
+      <section class="work" aria-label="Our work">
+        <article>
+          <span class="number" aria-hidden="true">01 / OUR APP</span>
+          <h2>Drimi</h2>
+          <p>An iPhone app that helps families keep track of baby care. Record feeds, sleep, and daily routines, and share care information with the people looking after your baby.</p>
+          <span class="status">In development</span>
+        </article>
+        <article>
+          <span class="number" aria-hidden="true">02 / OUR WORK</span>
+          <h2>Custom software</h2>
+          <p>Software development for businesses and their products, from shaping an idea to implementing and maintaining an application.</p>
+        </article>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Let’s talk.</h2>
+        <a href="mailto:stefan@codinglands.com">stefan@codinglands.com</a>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <div class="wrap legal">
+      <div>
+        <strong>CODINGLANDS S.R.L.</strong>
+        <p>Romanian limited liability company<br>Company identifier (CUI): 47457859<br>Trade register: J2023000136225</p>
+      </div>
+      <address>
+        <strong>Registered office</strong>
+        Strada Stejar nr. 21, camera 1, bloc A2,<br>
+        scara B, etaj 7, apartament 31<br>
+        Iași, Iași County, 700327, Romania
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
